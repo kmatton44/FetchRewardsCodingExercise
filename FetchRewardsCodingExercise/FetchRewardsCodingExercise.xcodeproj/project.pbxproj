@@ -20,6 +20,7 @@
 		FA4437A325C7CF86000101DF /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4437A225C7CF86000101DF /* EventTableViewCell.swift */; };
 		FA4437BD25C87C99000101DF /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4437BC25C87C99000101DF /* EventInfoViewController.swift */; };
 		FA4437CA25C87E9B000101DF /* ReformatDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4437C925C87E9B000101DF /* ReformatDate.swift */; };
+		FA71FA3525D36317000A5494 /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA71FA3425D36317000A5494 /* LoadMoreTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FA4437A225C7CF86000101DF /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		FA4437BC25C87C99000101DF /* EventInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewController.swift; sourceTree = "<group>"; };
 		FA4437C925C87E9B000101DF /* ReformatDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReformatDate.swift; sourceTree = "<group>"; };
+		FA71FA3425D36317000A5494 /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				FA44374825C77560000101DF /* AppDelegate.swift */,
 				FA44374A25C77560000101DF /* SceneDelegate.swift */,
 				FA4437A225C7CF86000101DF /* EventTableViewCell.swift */,
+				FA71FA3425D36317000A5494 /* LoadMoreTableViewCell.swift */,
 				FA4437C925C87E9B000101DF /* ReformatDate.swift */,
 				FA44374E25C77560000101DF /* Main.storyboard */,
 				FA44375125C77560000101DF /* Assets.xcassets */,
@@ -295,6 +298,7 @@
 				FA4437CA25C87E9B000101DF /* ReformatDate.swift in Sources */,
 				FA44374D25C77560000101DF /* ViewController.swift in Sources */,
 				FA4437BD25C87C99000101DF /* EventInfoViewController.swift in Sources */,
+				FA71FA3525D36317000A5494 /* LoadMoreTableViewCell.swift in Sources */,
 				FA44374925C77560000101DF /* AppDelegate.swift in Sources */,
 				FA44374B25C77560000101DF /* SceneDelegate.swift in Sources */,
 			);
