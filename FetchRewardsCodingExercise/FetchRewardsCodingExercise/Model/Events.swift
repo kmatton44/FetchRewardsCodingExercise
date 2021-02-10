@@ -9,6 +9,20 @@ import Foundation
 
 struct Initial: Codable {
     var events: [EventDetail]
+    var meta: MetaDetails
+}
+
+struct MetaDetails: Codable {
+    var total: Int?
+    var page: Int?
+    var per_page: Int?
+    
+    init() {
+            total = nil
+            page = nil
+            per_page = nil
+            print("in init()")
+        }
 }
 
 struct EventDetail: Codable {

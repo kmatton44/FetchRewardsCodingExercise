@@ -21,7 +21,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-az-4UJ">
-                                <rect key="frame" x="0.0" y="144" width="414" height="752"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" rowHeight="175" id="2fn-wN-VNX" customClass="EventTableViewCell" customModule="FetchRewardsCodingExercise" customModuleProvider="target">
@@ -118,6 +118,32 @@
                                             <segue destination="W41-0c-Xnr" kind="presentation" identifier="eventInfo" modalPresentationStyle="fullScreen" id="DtB-Vy-HUd"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="loadMoreCell" rowHeight="175" id="Jkr-RU-qEq" customClass="LoadMoreTableViewCell" customModule="FetchRewardsCodingExercise" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="203" width="414" height="175"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jkr-RU-qEq" id="5vH-hJ-5Fd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8R-UY-Wes">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="Load More Events">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="loadMoreClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ds-Zn-SXq"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="k8R-UY-Wes" firstAttribute="top" secondItem="5vH-hJ-5Fd" secondAttribute="top" id="1v8-4W-ykB"/>
+                                                <constraint firstItem="k8R-UY-Wes" firstAttribute="leading" secondItem="5vH-hJ-5Fd" secondAttribute="leading" id="7c7-w5-Wje"/>
+                                                <constraint firstAttribute="bottom" secondItem="k8R-UY-Wes" secondAttribute="bottom" id="Gsc-wV-jkG"/>
+                                                <constraint firstAttribute="trailing" secondItem="k8R-UY-Wes" secondAttribute="trailing" id="JOP-K8-UPA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
@@ -128,10 +154,10 @@
                             <constraint firstItem="d6E-Nc-3Io" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Zf-8d-dbF"/>
                             <constraint firstItem="d6E-Nc-3Io" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4zm-KY-MRP"/>
                             <constraint firstItem="d6E-Nc-3Io" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AOX-Is-EOF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6B0-az-4UJ" secondAttribute="bottom" constant="5" id="Iuy-hd-Hld"/>
                             <constraint firstItem="6B0-az-4UJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J9I-EC-eZn"/>
                             <constraint firstItem="6B0-az-4UJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XMo-dy-myZ"/>
                             <constraint firstItem="6B0-az-4UJ" firstAttribute="top" secondItem="d6E-Nc-3Io" secondAttribute="bottom" id="eKS-tM-g0B"/>
-                            <constraint firstAttribute="bottom" secondItem="6B0-az-4UJ" secondAttribute="bottom" id="qt9-sU-88m"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="nF1-Ci-FD1"/>
